@@ -1,0 +1,29 @@
+plugins {
+  id 'idea'
+  id 'java'
+}
+
+def projectName = 'Cardinal'
+def projectVersionMajor = '0'
+def projectVersionMinor = '1'
+def projectVersionPatch = '0'
+def projectVersion = projectVersionMajor + '.' + projectVersionMinor + '.' + projectVersionPatch;
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+jar {
+  archiveName = projectName + ' ' + projectVersion + '.jar'
+
+  manifest {
+    attributes 'Main-Class': 'cardinal.Cardinal'
+  }
+
+  destinationDir = new File('app')
+}
+
+idea {
+  project {
+    vcs = 'Git'
+  }
+}

@@ -1,0 +1,19 @@
+# Gradle
+.gradle
+build
+
+# IDEA
+.idea
+*.iws
+*.iml
+*.ipr
+
+# Java
+*.jar
+
+# Misc
+.DS_store
+Thumbs.db
+
+# Code
+.vscode

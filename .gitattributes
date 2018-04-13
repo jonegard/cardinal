@@ -1,0 +1,9 @@
+* text=auto eol=lf
+
+*.gradle      text
+*.java        text diff=java
+*.md          text
+
+*.gif         binary
+*.jpg         binary
+*.png         binary
